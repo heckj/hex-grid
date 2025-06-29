@@ -1,5 +1,5 @@
-/// Enumeration for direction
-public enum Direction {
+/// Enumeration for direction.
+public enum Direction: Hashable, Sendable {
     /// ⬣ - flat side on top of a hexagon
     case flat(Flat)
     
@@ -10,7 +10,7 @@ public enum Direction {
     /// ⬣ - flat side on top of a hexagon
     /// individual cases correspond to common cardinal directions
     /// (`east` and `west` directions are not available for **flat on top** orientation)
-    public enum Flat: Int {
+    public enum Flat: Int, Hashable, Sendable {
         case north = 5
         case northEast = 0
         case southEast = 1
@@ -22,7 +22,7 @@ public enum Direction {
     /// ⬢ - pointy side on top of a hexagon
     /// individual cases correspond to common cardinal directions
     /// (`north` and `south` directions are not available for **pointy on top** orientation)
-    public enum Pointy: Int {
+    public enum Pointy: Int, Hashable, Sendable {
         case northEast = 0
         case east = 1
         case southEast = 2

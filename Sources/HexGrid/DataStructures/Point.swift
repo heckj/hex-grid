@@ -1,5 +1,5 @@
 /// Basic structure containing an `x` and `y` value.
-public struct Point: Codable, Equatable {
+public struct Point: Codable, Equatable, Sendable {
     public var x, y: Double
 
     /// Initializing the `Point`.

@@ -155,7 +155,7 @@ class ConvertorTests: XCTestCase {
     
     
     
-    static var allTests = [
+    static let allTests = [
         ("Convert coordinates from cube to axial", testConvertCubeToAxial),
         ("Convert coordinates from cube to offset (odd row + pointy top)", testConvertCubeToOffsetOddRow),
         ("Convert coordinates from cube to offset (odd row + pointy top + alternate row)", testConvertCubeToOffsetOddRowAlt),

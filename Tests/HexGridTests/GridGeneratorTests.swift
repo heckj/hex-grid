@@ -258,7 +258,7 @@ class GridGeneratorTests: XCTestCase {
         XCTAssertEqual(gridFlat.cells.count, 12)
     }
 
-    static var allTests = [
+    static let allTests = [
         ("Create rectangular grids", testCreateRectangleGrid),
         ("Create hexagonal grid", testCreateHexagonGrid),
         ("Create triangular grid", testCreateTriangleGrid),

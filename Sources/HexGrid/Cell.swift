@@ -9,9 +9,11 @@ public class Cell: Codable {
     /// Basic Initializer
     ///
     /// - parameters:
-    ///     - coordinates: Cube coordinates of a cell
-    ///     - isBlocked: Bool value specipyfing whether cell is blocked or not
-    ///     - cost: Cost of passing the cell (used in pathfinding).
+    ///  - coordinates: Cube coordinates of a cell
+    ///  - isBlocked: Bool value specifying whether cell is blocked or not
+    ///  - isOpaque: A Boolean value that indicates whether the cell is opaque.
+    ///  - cost: Cost of passing the cell (used in pathfinding).
+    ///  - attributes: A dictionary of attributes associated with the cell.
     public init(_ coordinates: CubeCoordinates, isBlocked: Bool = false, isOpaque: Bool = false, cost: Double = 0, attributes: [String: Attribute] = [String: Attribute]()) {
         self.coordinates = coordinates
         self.isBlocked = isBlocked

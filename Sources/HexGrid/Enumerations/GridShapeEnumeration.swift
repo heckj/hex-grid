@@ -2,7 +2,7 @@
 ///
 /// Options are: `hexagon`, `rectangle`, and `triangle`.
 /// Each option has stored properties relevant to that shape.
-public enum GridShape {
+public enum GridShape: Hashable, Sendable {
 
     /// Hexagonal `GridShape`. Stored property corresponds to side-length.
     case hexagon(Int)

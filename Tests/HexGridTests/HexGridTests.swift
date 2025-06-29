@@ -880,7 +880,7 @@ class HexGridTests: XCTestCase {
         XCTAssertEqual((gridFlat.pixelSize.height * 10).rounded()/10, expectedHeightFlat)
     }
         
-    static var allTests = [
+    static let allTests = [
         ("Test cell by coordinates", testGetCell),
         ("Test all non blocked cells", testGetNonBlockedCells),
         ("Test all non blocked coordinates", testGetNonBlockedCoordinates),

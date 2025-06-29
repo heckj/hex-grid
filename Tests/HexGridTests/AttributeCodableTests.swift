@@ -72,7 +72,7 @@ class AttributeCodableTests: XCTestCase {
                         "third": "third value"])
     }
     
-    static var allTests = [
+    static let allTests = [
         ("Test JSON Encoding", testJSONEncoding),
         ("Test JSON Decoding", testJSONDecoding)
     ]

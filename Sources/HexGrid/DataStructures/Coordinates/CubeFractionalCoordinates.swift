@@ -1,7 +1,7 @@
 import Foundation
 
 /// Represents coordinates in Cube format using x, y and z axis
-public struct CubeFractionalCoordinates: Hashable {
+public struct CubeFractionalCoordinates: Hashable, Sendable {
     public let x, y, z: Double
     
     /// Basic Initializer

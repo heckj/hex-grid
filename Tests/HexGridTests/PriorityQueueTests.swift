@@ -96,7 +96,7 @@ class PriorityQueueTests: XCTestCase {
         XCTAssertEqual(nodeA, nodeB)
     }
     
-    static var allTests = [
+    static let allTests = [
         ("Test empty - priority queue", testEmpty),
         ("Test one element - priority queue", testOneElement),
         ("Test two elements in order - priority queue", testTwoElementsInOrder),

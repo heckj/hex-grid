@@ -143,7 +143,7 @@ class CoordinatesTests: XCTestCase {
         XCTAssertFalse(axialCoordinates == invalidCoordinates)
     }
     
-    static var allTests = [
+    static let allTests = [
         ("Create valid cube coordinates", testCreateValidCubeCoordinates),
         ("Create inalid cube coordinates", testCreateInalidCubeCoordinates),
         ("Create axial coordinates", testCreateAxialCoordinates),

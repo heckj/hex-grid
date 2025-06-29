@@ -56,7 +56,7 @@ class CellTests: XCTestCase {
         XCTAssertEqual(cell.attributes["title"], "New Title")
     }
     
-    static var allTests = [
+    static let allTests = [
         ("Test Create cell", testCreateCell),
         ("Test Rotate cell left", testRotateLeft),
         ("Test Rotate cell right", testRotateRight),

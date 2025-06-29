@@ -329,7 +329,7 @@ class HeapTests: XCTestCase {
         XCTAssertEqual(heapsort(array, <), [1, 2, 3, 5, 7, 9])
     }
     
-    static var allTests = [
+    static let allTests = [
         ("Test empty - heap", testEmptyHeap),
         ("Test is empty  - heap", testIsEmpty),
         ("Test count - heap", testCount),

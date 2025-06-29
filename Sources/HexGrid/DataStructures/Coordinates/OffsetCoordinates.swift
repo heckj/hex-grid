@@ -1,7 +1,7 @@
 /// Represents coordinates in Offset format using column and row.
 ///
 /// Offset coordinates, usually used for rendering and UI purposes.
-public struct OffsetCoordinates {
+public struct OffsetCoordinates: Sendable, Hashable {
     public let column, row: Int
     public let orientation: Orientation
     public let offsetLayout: OffsetLayout

@@ -442,7 +442,7 @@ class MathTests: XCTestCase {
     }
     
     
-    static var allTests = [
+    static let allTests = [
         ("Test Add operation", testAddOperation),
         ("Test Subtract operation", testSubtractOperation),
         ("Test Scale operation", testScaleOperation),
