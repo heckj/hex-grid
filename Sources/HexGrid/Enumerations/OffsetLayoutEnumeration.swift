@@ -3,7 +3,7 @@
 /// There are four offset types depending on orientation of hexagons.
 /// The “row” types are used with with pointy top hexagons and the “column” types are used with flat top.
 ///
-/// See ``OrientationEnumeration``.
+/// See ``Orientation``.
 ///
 /// - Pointy on top orientation
 ///   - odd-row (slide alternate rows right)
