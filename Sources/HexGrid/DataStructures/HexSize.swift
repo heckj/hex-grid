@@ -1,15 +1,26 @@
-/// Basic structure holding a `width` and `height`.
+/// The size of a hex.
 public struct HexSize: Codable, Equatable {
-    public var width, height: Double
+    /// The width of the hex
+    public var width: Double
+    /// The height of the hex
+    public var height: Double
 
-    /// Width and Height of a hex
+    /// Creates a hex size with different width and height.
+    /// 
     /// - Parameters:
     ///   - width: width of a hex
     ///   - height: height of a hex
-    /// - Note:
-    ///     Using different width and height you can generate various aspect ratios.
+    ///
+    /// Use different height and width values to represent a preferred aspect ration.
     public init (width: Double, height: Double) {
         self.width = width
         self.height = height
+    }
+    
+    /// Creates a hex size with a 1:1 aspect ration.
+    /// - Parameter unitSize: The size of the hex.
+    public init(_ unitSize: Double) {
+        self.width = unitSize
+        self.height = unitSize
     }
 }
